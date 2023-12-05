@@ -205,12 +205,33 @@
     transform: translateY(0);
   }
 
+  #rr {
+    padding-right: 30%;
+  }
+
   @media only screen and (max-width: 770px) {
     #resp{
       font-size: 30vw;
     }
   }
 
+  @media only screen and (min-width: 766px) and (max-width: 991px) {
+    #rr {
+      padding-right: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    #rr {
+      padding-right: 20vw;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+    #rr {
+      padding-right: 35vw;
+    }
+  }
 </style>
 
 </head>
@@ -233,11 +254,11 @@
   
     <div id = "mycard" class="col-md-5 col-lg-5 mycard pd">
       <div id = "great1" class="card gr-1 text-center">
-        <div class="txt" style="color: black">
+        <div class="txt mx-auto" style="color: black">
           <h1 style="color: purple; font-weight: 500; font-size: xx-large; font-family: 'Nunito';"><b>STUDENT</b><br><b>LOGIN</b></h1>
         </div>
         <hr>
-        <div class="d-flex justify-content-center" style="padding-right: 30%;">
+        <div id="rr" class="d-flex justify-content-center">
           <a href="/login/student"><button class="button-5">Login</button></a>
         </div>
       </div>
@@ -246,9 +267,11 @@
     
     <div class="col-md-5 col-lg-5  mycard">
       <div id = "great2" class="card gr-2 text-center" style="height: 500px; border-radius: 5px;">
-          <h1 style="color: purple; font-weight: 700; font-size: xx-large; font-family: 'Nunito';"><b>FACULTY</b><br><b>LOGIN</b></h1>
+        <div class="txt mx-auto" style="color: black">
+        <h1 style="color: purple; font-weight: 500; font-size: xx-large; font-family: 'Nunito';"><b>FACULTY</b><br><b>LOGIN</b></h1>
+      </div>
           <hr>
-          <div class="d-flex justify-content-center" style="padding-right: 30%;">
+          <div id="rr" class="d-flex justify-content-center">
             <a href="/login/faculty"><button class="button-5" >Login</button></a>
             </div>
       </div>

@@ -1,5 +1,10 @@
-
+<div align="center">
+   
 # Course Management System 🎓
+![2](https://github.com/srikarpadaliya/Course_management_system/assets/122224886/31f8dc64-0ee1-4ede-bf01-cf602388706b)
+Elevate learning with streamlined course delivery and dynamic educational engagement.
+
+</div>
 
 ## Description 📝
 
@@ -23,7 +28,7 @@ What sets this system apart is its integration with AWS (Amazon Web Services) da
 
 - **Backend:** Django (Python Framework)
 - **Database:** SQLite & AWS Database Services
-- **Frontend:** HTML, CSS, Bootstrap
+- **Frontend:** HTML, CSS, Javascript ,Bootstrap 
 - **Version Control:** Git & GitHub
 
 ## Features 🌟
@@ -81,12 +86,30 @@ Contributions to enhance the Course Management System are welcome. Feel free to 
 
 ## Support 💬
 
-For support, email `202101053@daiict.ac.in` or raise an issue on the GitHub repository.
+For support, email `202101095@daiict.ac.in` or raise an issue on the GitHub repository.
 
-## Screenshots 📸
+## Preview 📸
 
+
+
+https://github.com/srikarpadaliya/Course_management_system/assets/122224886/130b9aaa-c412-4cf4-b0f6-500fa4e51989
+
+
+
+--> Login Interface :-
 <img width="1341" alt="Screenshot 2023-11-26 at 11 12 24 PM" src="https://github.com/TheGreatRaj/woc5.0-android-social_media_app-RajChauhan/assets/122224886/5a42bc4b-11ce-4a2c-949b-a7d2144d9562">
 
 <img width="1339" alt="Screenshot 2023-11-26 at 11 12 32 PM" src="https://github.com/TheGreatRaj/woc5.0-android-social_media_app-RajChauhan/assets/122224886/4315c596-5601-4603-a1de-0ca29174528c">
+
+
+<div align="center">
+   
+## Access the site : (https://academixportal.pythonanywhere.com/)
+## Youtube Video : (https://youtu.be/BlfM0V3GeQE?si=w-_E1bm4VtCK-oSL)
+
+</div>
+
+
+![Red Gradient Personal LinkedIn Banner](https://github.com/srikarpadaliya/Course_management_system/assets/122224886/6eb5c651-e3e3-4a4d-afa9-9ad3c127af87)
 
 
