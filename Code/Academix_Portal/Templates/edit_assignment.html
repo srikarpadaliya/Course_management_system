@@ -183,7 +183,7 @@ margin-top: 10px;
      <textarea required class="form-control" required name="description" type="text" placeholder="{{record.description}}" >{{record.description}}</textarea>
 
      <label for="duedate">Due-Date : </label>
-      <input required type="datetime-local" id="duedate" class="form-control" name="duedate" placeholder="{{record.duedate}}" value="{{record.duedate}}">
+      <input required type="datetime-local" id="duedate" class="form-control" name="duedate" placeholder="{{record.duedate}}" value="{{record.duedate}}" oninput="checkDate(this)">
 
       <label for="max_grade">Max-Grade :</label>
       <input required type="number" class="form-control" name="max_grade" placeholder="{{record.max_grade}}" value="{{record.max_grade}}">
@@ -196,6 +196,7 @@ margin-top: 10px;
           var description = form.description.value;
           var duedate = form.duedate.value;
           var max_grade = form.max_grade.value; 
+          // console.log(max_grade);
           var attachment = form.attachment.value;
           if(assignmentname.trim() == ""|| description.trim() == "" || duedate.trim() == "" || max_grade.trim() == "" || attachment.trim() == ""){
             document.getElementById("error").innerHTML = "Please fill all the fields";
@@ -203,10 +204,31 @@ margin-top: 10px;
             window.scrollTo(0, 0);
             return false;
           }
+          else if(max_grade<=0){
+              document.getElementById("error").innerHTML = "Please enter a valid max grade";
+                document.getElementById("error").style.display = "block";
+                window.scrollTo(0, 0);
+                return false;
+            }
           else{
             document.getElementById("error").style.display="none";
             return true;
           }
+        }
+        function checkDate(input) {
+        var selectedTimestamp = Date.parse(input.value);
+        var currentTimestamp = Date.now();
+
+        if (selectedTimestamp < currentTimestamp) {
+            document.getElementById("error").innerHTML = "Due date cannot be in the past";
+            document.getElementById("error").style.display = "block";
+            window.scrollTo(0, 0);
+            input.setCustomValidity("Due date cannot be in the past");
+        } else {
+            document.getElementById("error").style.display = "none";
+            input.setCustomValidity(""); // Reset validation message
+        }
+
         }
     </script>
 </body>

@@ -260,8 +260,8 @@ button{
       
     function checkreg(form){
       const checkmail=form.email.value;
-      const checkpass=document.getElementById("pass1").value.trim();
-      const checkpass2=document.getElementById("pass2").value.trim();
+      const checkpass=document.getElementById("pass1").value;
+      const checkpass2=document.getElementById("pass2").value;
       const checkbatch=form.batch.value.trim();
       const checkbranch=form.branch.value.trim();
       const checkprogram=form.program.value.trim();
@@ -271,6 +271,12 @@ button{
 
       if(checkbatch==""||checkbranch==""||checkprogram==""||checkfname==""||checklname==""||checkmname==""){
         document.getElementById("error2").innerHTML="Please fill all the details";
+        document.getElementById("error2").style.display="block";
+        window.scrollTo(0,0);
+        return false;
+      }
+      else if(checkbatch<=0){
+        document.getElementById("error2").innerHTML="Please enter a valid batch year";
         document.getElementById("error2").style.display="block";
         window.scrollTo(0,0);
         return false;

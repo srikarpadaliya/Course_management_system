@@ -207,11 +207,16 @@ margin-top: 10px;
                 window.scrollTo(0, 0);
                 return false;
             }
+            else if(max_grade<=0){
+              document.getElementById("error").innerHTML = "Please enter a valid max grade";
+                document.getElementById("error").style.display = "block";
+                window.scrollTo(0, 0);
+                return false;
+            }
             else{
               document.getElementById("error").style.display="none";
                 return true;
             }
-
     }
     function checkDate(input) {
         var selectedTimestamp = Date.parse(input.value);
